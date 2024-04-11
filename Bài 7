@@ -12,9 +12,9 @@ int main() {
     vector <vector <bool>> p(n+1, vector <bool> (m+1, false));
     for (int j=1; j<=m; j++) p[1][j]=true;
     vector <vector <bool>> r(n+1, vector <bool> (m+1));
-    for (int i = 0; i < n; i++) {
+    for (int i = 1; i <= n; i++) {
         vector<bool> row;
-        for (int j = 0; j < m; j++) {
+        for (int j = 1; j <= m; j++) {
              row.push_back(r[i][j]);
         }
         r.push_back(row);
